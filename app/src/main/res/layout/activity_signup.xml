@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/back4"
+    tools:context=".signup">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/josefin_sans_semibold_italic"
+        android:text="Enter your Phone  Number"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/countrycodepicker"
+        android:layout_width="140dp"
+        android:layout_height="51dp"
+        android:layout_centerInParent="true"
+        app:ccp_areaCodeDetectedCountry="true"
+        app:ccp_autoDetectCountry="true"
+        app:layout_constraintBottom_toBottomOf="@+id/getphonenumber"
+        app:layout_constraintEnd_toStartOf="@+id/getphonenumber"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/getphonenumber"
+        app:layout_constraintVertical_bias="0.0">
+
+    </com.hbb20.CountryCodePicker>
+
+    <EditText
+        android:id="@+id/getphonenumber"
+        android:layout_width="258dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="@color/clr1"
+        android:ems="10"
+        android:textSize="21dp"
+        android:hint="Phone no"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/countrycodepicker"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/sendotpbutton"
+        android:layout_width="202dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/shapebox3"
+        android:text="Send OTP"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getphonenumber" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="410dp"
+        android:layout_height="310dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fastfoodback" />
+
+    <ProgressBar
+        android:id="@+id/progressbarofmain"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="48dp"
+        android:indeterminateTint="@color/btnclr2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sendotpbutton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

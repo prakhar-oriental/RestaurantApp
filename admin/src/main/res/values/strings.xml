@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Admin</string>
+    <string-array name="category">
+        <item>Pizza</item>
+        <item>Burger</item>
+        <item>Shake</item>
+        <item>Donut</item>
+        <item>Popular</item>
+    </string-array>
+</resources>

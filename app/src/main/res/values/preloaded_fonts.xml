@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/almendra_display</item>
+        <item>@font/architects_daughter</item>
+        <item>@font/biryani_extralight</item>
+        <item>@font/calligraffitti</item>
+        <item>@font/clicker_script</item>
+        <item>@font/condiment</item>
+        <item>@font/crafty_girls</item>
+        <item>@font/galada</item>
+        <item>@font/josefin_sans_semibold_italic</item>
+        <item>@font/offside</item>
+        <item>@font/quintessential</item>
+        <item>@font/vesper_libre_bold</item>
+    </array>
+</resources>

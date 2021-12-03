@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="390dp"
+    android:background="@drawable/fastfoodback">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="333dp"
+        android:layout_height="345dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editusernamea"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="311dp"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/btnclr2"
+                app:helperTextEnabled="true"
+
+                app:endIconTint="@color/black"
+                app:helperTextTextColor="@color/red"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.13"
+                app:startIconDrawable="@drawable/ic_baseline_verified_user_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editusername"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:hint="Name"
+
+
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editphoneb"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="311dp"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/btnclr2"
+
+                app:helperTextEnabled="true"
+                app:helperTextTextColor="@color/red"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.407"
+                app:startIconDrawable="@drawable/ic_baseline_local_phone_24"
+                tools:ignore="DuplicateIds">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+                    android:hint="Phone" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editaddressc"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="311dp"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/btnclr2"
+
+                app:helperTextEnabled="true"
+                app:helperTextTextColor="@color/red"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.514"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.688"
+                app:startIconDrawable="@drawable/address2">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="address"
+                    tools:ignore="DuplicateIds" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/updatebtn"
+                android:layout_width="89dp"
+                android:layout_height="35dp"
+                android:background="@color/mybackground"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="Update"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.462"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.883" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

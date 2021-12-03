@@ -1,0 +1,3 @@
+rootProject.name = "ArtybeaconFoodApp2"
+include ':app'
+include ':admin'

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+    tools:context=".AddProducts">
+
+    <ImageView
+        android:id="@+id/dishimg"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.833"
+        app:srcCompat="@drawable/user2" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="311dp"
+        android:layout_height="54dp"
+        app:boxStrokeColor="@color/black"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dishname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Dish Name"
+
+            android:inputType="text"
+            android:textSize="13sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="314dp"
+        android:layout_height="65dp"
+        app:boxStrokeColor="@color/black"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.539">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dishprice"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:hint="Price"
+
+            android:inputType="number"
+            android:textSize="13sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/savedish"
+        android:layout_width="122dp"
+        android:layout_height="40dp"
+        android:background="@color/btnclr2"
+        android:text="ADD"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.934" />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/textInputLayout3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="314dp"
+        android:layout_height="64dp"
+        app:boxStrokeColor="@color/black"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.662">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dishuniqueid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dish Unique Id"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="311dp"
+        android:layout_height="56dp"
+        android:tooltipText="vopd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="311dp"
+        android:layout_height="54dp"
+        app:boxStrokeColor="@color/black"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.423">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/multilinedis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Multi-description"
+
+            android:inputType="textMultiLine"
+            android:textSize="13sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Category"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout6"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="311dp"
+        android:layout_height="54dp"
+        app:boxStrokeColor="@color/black"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/onelinedis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="One line description"
+
+            android:inputType="textMultiLine"
+            android:textSize="13sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
